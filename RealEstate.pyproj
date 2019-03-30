@@ -21,18 +21,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Admin\check_login.py" />
+    <Compile Include="check_login.py" />
     <Compile Include="display.py" />
     <Compile Include="first.py" />
     <Compile Include="land.py" />
-    <Compile Include="Admin\login.py" />
+    <Compile Include="login.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\" />
+    <Folder Include="Land\" />
+    <Folder Include="Property\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminLogin.txt" />
-    <Content Include="Admin\AdminLogin.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

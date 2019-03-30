@@ -8,7 +8,6 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from login import *
-from check_login import *
 
 class Ui_First(object):
     def login(self):
@@ -45,6 +44,7 @@ class Ui_First(object):
         self.Buy_but.setGeometry(QtCore.QRect(380, 40, 121, 51))
         self.Buy_but.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.Buy_but.setObjectName("Buy_but")
+        self.Buy_but.setStyleSheet('QMainWindow{background-color: white;}')
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(176, 42, 371, 41))
         self.label.setText("")
@@ -73,7 +73,7 @@ class Ui_First(object):
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    #app.setStyleSheet('QMainWindow{background-color: white;border: 1px solid black;}')
+    #app.setStyleSheet('QMainWindow{background-color: white;}')
     First = QtWidgets.QMainWindow()
     ui = Ui_First()
     ui.setupUi(First)

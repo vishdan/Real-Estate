@@ -7,13 +7,13 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-import check_login
+from check_login import check
 
 class Ui_Login(object):
     def accept(self):
         username=self.user_line.text()
         password=self.pass_line.text()
-        val=check_login.check(username,password)
+        val=check(username,password)
         self.lab_err.setAlignment(QtCore.Qt.AlignCenter)
         if(val == 0):
             self.lab_err.setText("Invalid Username/Password")
