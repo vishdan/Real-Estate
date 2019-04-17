@@ -27,7 +27,7 @@ class Ui_Login(object):
         Login.setObjectName("Login")
         Login.resize(431, 324)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("99129-200.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Login.setWindowIcon(icon)
         self.buttonBox = QtWidgets.QDialogButtonBox(Login)
         self.buttonBox.setGeometry(QtCore.QRect(30, 270, 341, 31))
